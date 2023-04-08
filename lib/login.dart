@@ -32,7 +32,7 @@ class _LoginState extends State<Login> {
               if(value!.isEmpty)
               {
              return "Username Enter";
-              }else if(value.length<5)
+              }else if(value.length<3)
             {return"atleast 3 characters";
               }return null;},),),
         Padding(
@@ -47,7 +47,7 @@ class _LoginState extends State<Login> {
            if(value!.isEmpty)
               {
               return "Password Enter";
-              }else if(value.length<5)
+              }else if(value.length<8)
               {
               return"atleast 8 characters";
               }
