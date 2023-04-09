@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:minto/login.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -27,8 +28,14 @@ body: Center(
             ),
           ),
         ],
-      )
+      ),
 
+    Padding(
+      padding: const EdgeInsets.only(top: 150),
+      child: ElevatedButton(onPressed:() {
+        Navigator.push(context, MaterialPageRoute(builder: (context) => Login(),));
+      }, child: Text("Start")),
+    ),
     ],
   ),
 ),
