@@ -20,7 +20,7 @@ class _LoginState extends State<Login> {
 
         child: Form(
           key: key,
-          child: Column(
+          child: Column(mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Padding(
                 padding: const EdgeInsets.only(top: 10, bottom: 10),
@@ -37,7 +37,7 @@ class _LoginState extends State<Login> {
               validator: (value) {
                 if(value!.isEmpty)
                 {
-               return "Username Enter";
+               return "Enter Username";
                 }else if(value.length<3)
               {return"atleast 3 characters";
                 }return null;},),),
@@ -45,7 +45,7 @@ class _LoginState extends State<Login> {
             padding: const EdgeInsets.only(left: 60.0,right: 60.0,bottom: 10.0,),
               child: TextFormField(decoration:
                 InputDecoration(contentPadding: EdgeInsets.only(left: 30,),
-                  hintText: "Password",
+                  hintText: "Enter Password",
                     border: OutlineInputBorder
                   (borderRadius: BorderRadius.circular(30),),),
               controller: password,

@@ -137,6 +137,7 @@ class _List1State extends State<List1> {
                 title: Text("Curd Rice"),
                 subtitle: Text("₹180"),
               ),
+
             ),
           ],
         ),
